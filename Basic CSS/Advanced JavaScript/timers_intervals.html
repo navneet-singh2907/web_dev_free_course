@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timers and Intervals</title>
+</head>
+<body>
+    <script>
+        // setTimeout example
+        function greet() {
+            console.log("Hello after 2 seconds");
+        }
+        setTimeout(greet, 2000);    
+        // setInterval example
+        let count = 0;  
+        const intervalId = setInterval(() => {
+            count++;
+            console.log("Interval executed " + count + " times");
+            if (count >= 5) {
+                clearInterval(intervalId);
+                console.log("Interval cleared after 5 executions");
+            }
+        }, 1000);   
+        //clearTimeout example
+        const timeoutId = setTimeout(() => {
+            console.log("This will not be logged");
+        }, 3000);
+    </script>
+</body>
+</html>
