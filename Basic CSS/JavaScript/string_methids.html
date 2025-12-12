@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods in Strings</title>
+    <script>
+        console.log("String Methods in JavaScript");
+        let str = "Hello, Neo. Welcome to the world of JavaScript.";
+        // Length of the string
+        console.log("Length of the string:", str.length);
+        // Convert to uppercase
+        console.log("Uppercase:", str.toUpperCase());
+        // Convert to lowercase
+        console.log("Lowercase:", str.toLowerCase());       
+        // Find a substring
+        console.log("Index of 'Neo':", str.indexOf("Neo"));
+        // Extract a substring
+        console.log("Substring (7, 10):", str.substring(7, 10));
+        // Replace a substring
+        console.log("Replace 'Neo' with 'JavaScript':", str.replace("Neo", "JavaScript"));      
+//include check
+        console.log("Includes 'world':", str.includes("world"));    
+        //index check
+        console.log("Starts with 'Hello':", str.startsWith("Hello"));
+        //last index of
+        console.log("Last index of 'o':", str.lastIndexOf("o"));
+        //insert method using split and join
+        let words = str.split(" "); 
+        words.splice(2, 0, "the Matrix,");
+        let newStr = words.join(" ");
+        console.log("String after insertion:", newStr);
+        //split method
+        let strArray = str.split(" ");  
+        console.log("String split into array:", strArray);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

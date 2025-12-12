@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in JavaScript</title>
+    <script>
+        //string declaration
+        let str1 = "Hello, World!"; //double quotes
+        let str2 = 'Hello, JavaScript!'; //single quotes        
+        let str3 = `Hello, ES6!`; //backticks
+        console.log(str1);
+        console.log(str2);      
+        console.log(str3);
+        //string concatenation  
+        let greeting = str1 + " " + str2;
+        console.log("Concatenated String:", greeting);
+        //string methods
+
+        console.log("Length of str1:", str1.length);
+        console.log("Uppercase str2:", str2.toUpperCase());     
+        console.log("Substring of str3:", str3.substring(0, 5));    
+        console.log("Substring of str1:", str1.substring(7, 12));
+        console.log("Index of 'JavaScript' in str2:", str2.indexOf("JavaScript"));
+        //template literals
+        let name = "Alice";
+
+        console.log(`Hello, ${name}!`); 
+        let age = 25;   
+        console.log(`${name} is ${age} years old.`);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

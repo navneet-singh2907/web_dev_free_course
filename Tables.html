@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>Table</h1>
+    <!-- tr - table rows, td - table data, th - table headers we going to use them -->
+     <!-- border = 1,2 will provide the border to the table -->
+     <table border="2">
+        <tr>
+        <th>S.no</th>
+        <th>Price</th>
+        <th>Item</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>apple</td>
+            <td>$1.99</td>
+        </tr>
+        <tr>
+             <td>2</td>
+            <td>banana</td>
+            <td>$0.99</td>
+        </tr>
+        <tr>
+             <td>3</td>
+            <td>orange</td>
+            <td>$1.49</td>
+        </tr>
+        
+     </table>
+
+     <!-- if we want to join two column we can use clspan = "2" just like that -->
+      <table border="1">
+        <tr>
+        <th>S.no</th>
+        <th>Price</th>
+        <th>Item</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>apple</td>
+            <td>$1.99</td>
+        </tr>
+        <tr>
+             <td>2</td>
+            <td>banana</td>
+            <td>$0.99</td>
+        </tr>
+        <tr>
+             <td>3</td>
+            
+            <td colspan="2">$1.49</td>
+        </tr>
+
+
+      </table>
+      <!-- if we want to join two column we can use rowspan = "2" just like that -->
+
+      <table border="2">
+        <tr>
+        <th>S.no</th>
+        <th>Price</th>
+        <th>Item</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>apple</td>
+            <td>$1.99</td>
+        </tr>
+        <tr>
+             <td>2</td>
+            <td rowspan="2">banana</td>
+            <td>$0.99</td>
+        </tr>
+        <tr>
+             <td>3</td>
+           
+            <td>$1.49</td>
+        </tr>
+      </table>
+
+
+      <!-- note - we can always tweak the range of clspan and rowspan not just only 2. -->
+</body>
+</html>

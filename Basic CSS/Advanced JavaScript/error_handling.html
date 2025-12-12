@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling in JavaScript</title>
+</head>
+<body>
+    
+    <script>
+        try {
+            //code that may throw an error
+            let result = 10 / 0;
+            console.log("Result: " + result);
+            // Intentionally throwing an error for demonstration
+            throw new Error("An intentional error occurred!");
+        } catch (error) {
+            //code to handle the error
+            console.error("Error caught: " + error.message);
+        } finally {
+            //code that will run regardless of an error occurring or not
+            console.log("Execution completed.");
+        }
+    </script>
+</body>
+</html>

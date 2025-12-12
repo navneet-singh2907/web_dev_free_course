@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More_Forms</title>Forms</title>
+</head>
+
+<body>
+    <h1>Fitness Form</h1>
+    <form action="/process.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <br>
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone">
+        <br>
+        <br>
+        <!-- Now there is a thing called placeholder let me show you what it does -->
+        <label for="password">Password</label>
+        <input type="text" id="password" placeholder="Your Password">
+        <br>
+        <br>
+
+        <label for="cpassword">Confirm Password</label>
+        <input type="text" id="cpassword">
+        <br><br>
+
+        <!-- here we going to implement the radio button -->
+
+
+        <p>Choose your Gender</p>
+
+        <label for="gender">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+
+        <label for="gender">Female</label>
+        <input type="radio" id="female" name="gender" value="female">
+
+        <label for="gender">Other</label>
+        <input type="radio" id="other" name="gender" value="other">
+
+        <br><br>
+        <!-- lets try to implement checkbox -->
+        <label for="playing">Playing</label>
+        <input type="checkbox" id="playing" name="playing" value="playing">
+
+        <label for="dancing">Dancing</label>
+        <input type="checkbox" id="dancing" name="dancing" value="dancing">
+
+        <label for="singing">Singing</label>
+        <input type="checkbox" id="singing" name="singing" value="singing">
+
+        <!-- we can interchange the lable according to our convenience -->
+
+
+
+        <br><br>
+        <!-- lets implement dropdown list box -->
+
+
+        <label for="city">Choose your city:</label>
+        <select name="city" id="city">
+            <option value="Memphis">Memphis</option>
+            <option value="New york">New York</option>
+            <option value="Los Angles">Los Angles</option>
+        </select>
+        <br> <br>
+
+
+
+
+        <textarea name="yourmsg" id="yourmsg" rows="5" cols="30">Your Messege</textarea>
+
+
+        <br> <br>
+
+        <input type="submit" id="submit">
+
+
+    </form>
+</body>
+
+</html>

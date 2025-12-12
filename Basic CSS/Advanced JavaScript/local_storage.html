@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage in JavaScript</title>
+
+</head>
+<body>
+    <div class="container">
+
+        I am a container
+        <form action="">
+            <input type="text" id="inputField" placeholder="Enter something to store">
+            <input type="Submit" , id="submitBtn" , value="Submit">
+           
+        </form>
+    </div>
+    <script>
+        const value = document.getElementById('inputField').value;
+        localStorage.setItem('name', value);
+        const submitBtn = document.getElementById('submitBtn');
+        submitBtn.addEventListener('click', () => {
+            const value = document.getElementById('inputField').value;
+            localStorage.setItem('name', value);
+            alert('Value stored in local storage: ' + localStorage.getItem('name'));
+        });
+
+    </script>
+</body>
+</html>

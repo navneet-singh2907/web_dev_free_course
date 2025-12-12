@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <script>
+        console.log("Array Methods");
+        let fruits = ["apple", "banana", "orange"];
+        console.log(fruits);
+        //accessing elements
+        console.log("First fruit:", fruits[0]); //apple
+        //modifying elements
+        fruits[1] = "grape";
+        console.log("Modified fruits:", fruits);
+
+        //array methods
+        fruits.push("mango"); //add to end
+        console.log("After push:", fruits);
+        fruits.pop(); //remove from end
+        console.log("After pop:", fruits);
+        //shift() - removes first element
+        fruits.shift();
+        console.log("After shift:", fruits);    
+        //unshift() - adds element at the beginning
+        fruits.unshift("kiwi");
+        console.log("After unshift:", fruits);
+        //double the elements using map
+        let numbers = [1, 2, 3, 4, 5];
+        let doubledNumbers = numbers.map(num => num * 2);
+        console.log("Doubled numbers:", doubledNumbers);    
+        //slice() - extracts a section of an array  
+        let slicedNumbers = numbers.slice(1, 4);
+        console.log("Sliced numbers:", slicedNumbers);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JavaScript</title>
+    <script>
+        console.log("Functions in JavaScript");
+
+        function greet(name) {
+            console.log("Hello " + name + ", welcome to JavaScript functions!");
+        }
+
+        greet("Neo");
+        greet("Trinity");
+        // Function to add two numbers
+
+        function add(a, b) {
+            return a + b;
+        }
+        // Function to calculate the average of two numbers
+        function average(x, y) {
+            return (x + y) / 2;                     
+        }
+        let avg = average(10, 20);
+        console.log("Average of 10 and 20 is:", avg);
+
+        let sum = add(5, 7);
+        console.log("Sum of 5 and 7 is:", sum);
+
+        // Function expression
+        const square = function (n) {
+            return n * n;
+        };
+        console.log("Square of 4 is:", square(4));
+        //arrow function
+        const multiply = (x, y) => x * y;
+        console.log("Multiplication of 3 and 4 is:", multiply(3, 4));
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

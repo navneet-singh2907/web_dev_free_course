@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in JavaScript</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+    <span id="firstSpan">I am a span</span>
+    <input id="textInput" type="text">
+    <script>
+        const span = document.getElementById("firstSpan");
+        span.addEventListener("click", () => {
+            alert("You clicked the span!");
+        });
+        const input = document.getElementById("textInput");
+        input.addEventListener("keyup", () => {
+            alert("You typed: " + input.value);
+        });
+        //Mouseover and Mouseout events
+        const box = document.querySelector(".box");
+        box.addEventListener("mouseover", () => {
+            box.style.backgroundColor = "blue";
+        });
+        box.addEventListener("mouseout", () => {
+            box.style.backgroundColor = "yellow";
+        });
+    </script>
+
+</body>
+
+</html> 
